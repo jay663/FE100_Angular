@@ -3,3 +3,6 @@
 <div class="alert alert-info" *ngFor="let book of books">
     {{book.title}} by {{book.author}}
 </div>
+<div *ngIf='errorMessage'>
+  {{errorMessage}}
+</div>

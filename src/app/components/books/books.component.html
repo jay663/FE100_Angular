@@ -1,0 +1,5 @@
+<input type="button" class="btn btn-primary" value="Get Books" (click)="getBooks()">
+
+<div class="alert alert-info" *ngFor="let book of books">
+    {{book.title}} by {{book.author}}
+</div>

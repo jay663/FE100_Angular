@@ -1,0 +1,14 @@
+<div>
+    <div class="form-group">
+      <label>First Name</label>
+      <input class="form-control" #fn>
+    </div>
+    <div class="form-group">
+      <label>Last Name</label>
+      <input class="form-control" #ln>
+    </div>
+    <input type="button" class="btn btn-success" value="Format" (click)='formatName(fn.value, ln.value)'>
+    <div>
+      {{fullName}}
+    </div>
+  </div> 
